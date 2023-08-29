@@ -1,0 +1,16 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "It is a Website which help us to find the different camping locations in a particular place and along with that the user can view the details of the place like price , rating etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vibhurathore",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.3"
+  }
+}
