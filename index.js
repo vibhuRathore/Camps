@@ -1,6 +1,20 @@
 const express = require('express');
-const app = express();
 const path = require('path');
+const Campground = require('./Models/campground');
+
+const mongoose = require('mongoose');
+mongoose.connect("mongodb://127.0.0.1:27017/camp-ground", { useNewUrlParser: true , useUnifiedTopology: true})
+    .then( () => {
+        console.log("Mongoose Connected");
+    })
+    .catch( (err) => {
+        console.log("Mongoose Not Connected");
+        console.log(err)
+    });
+
+
+const app = express();
+
 
 app.set('view engine', 'ejs' )
 app.set('views',path.join(__dirname,'views'))
