@@ -2,35 +2,35 @@
 <div class="row">
     <h1 class="text-center">New Campground</h1>
     <div class="col-6 offset-3">
-        <form action="/Campgrounds" method="post">
+        <form action="/Campgrounds" method="post" novalidate class="validated-form">
 
             <div class="mb-3">
                 <label class="form-label" for="name">Name</label>
-                <input class="form-control" type="text" id="name" name="Campground[name]">
+                <input class="form-control" type="text" id="name" name="Campground[name]" required>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="location">Location</label>
-                <input class="form-control" type="text" id="location" name="Campground[location]">
+                <input class="form-control" type="text" id="location" name="Campground[location]" required>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="image">Image Url</label>
-                <input class="form-control" type="text" id="image" name="Campground[image]">
+                <input class="form-control" type="text" id="image" name="Campground[image]" required>
             </div>
-
+        
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">INR</span>
                     <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
-                        aria-describedby="price-label" name="Campground[price]">
+                        aria-describedby="price-label" name="Campground[price]" required>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label class="form-label" for="description">Description</label>
-                <textarea class="form-control" type="text" id="description" name="Campground[description]"></textarea>
+                <textarea class="form-control" type="text" id="description" name="Campground[description]" required ></textarea>
             </div>
 
             <div class="mb-3">
